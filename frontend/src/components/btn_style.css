@@ -1,0 +1,71 @@
+.btn {
+    all: unset;
+    align-items: center;
+    background-color: #1f2833;
+    border: 1px solid;
+    border-color: #00ffc1;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 10px;
+    height: 36px;
+    padding: 0px 6px;
+    position: relative;
+    width: 220px;
+  }
+  
+  .btn .frame {
+    align-items: center;
+    background-color: #1f2833;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 10px;
+    height: 16px;
+    padding: 0px 4px;
+    position: relative;
+  }
+  
+  .btn .enter-your-name {
+    color: #ffffff;
+    font-family: "Jacques Francois", Helvetica;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .btn .enter-your-name-wrapper {
+    align-items: center;
+    background-color: #1f2833;
+    border-radius: 3px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 16px;
+    left: 6px;
+    overflow: hidden;
+    padding: 0px 4px;
+    position: absolute;
+    top: -8px;
+  }
+  
+  .btn .line-wrapper {
+    background-color: #1f2833;
+    height: 15px;
+    position: relative;
+    width: 10px;
+  }
+  
+  .btn .line {
+    height: 15px;
+    left: 5px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 1px;
+  }
+  

@@ -15,3 +15,14 @@ class DataView(APIView):
         if serializer.is_valid(raise_exception=True):
             serializer.save()
             return Response(serializer.data)
+class LoginView(APIView):
+    serializer_class=LoginSerializer
+    def get(self,request):
+        det=[{"username":det.username,"password":det.password}
+                for det in Login.objects.all()]
+        return Response(det)
+    def post(self,request):
+        serializer=LoginSerializer(data=request.data)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+            return Response(serializer.data)

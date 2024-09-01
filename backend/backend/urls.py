@@ -22,4 +22,5 @@ from attendance.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('attendance/',DataView.as_view(),name="something"),
+    path('login/', LoginView.as_view(), name="login"),
 ]
